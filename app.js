@@ -1,5 +1,5 @@
 // Public AniList profile statistics. This only reads public profile data.
-const ANILIST_USERNAME = "OSniffle0";
+const ANILIST_USERNAME = "0Sniffle0";
 const API_URL = "https://graphql.anilist.co";
 
 const query = `

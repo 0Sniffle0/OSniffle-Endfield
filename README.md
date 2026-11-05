@@ -1,4 +1,4 @@
-# OSniffle0 // Endfield-inspired AniList Overview
+# 0Sniffle0 // Endfield-inspired AniList Overview
 
 A fan-made, responsive profile dashboard prototype inspired by the clean white/yellow sci-fi presentation of Arknights: Endfield.
 
@@ -6,7 +6,7 @@ A fan-made, responsive profile dashboard prototype inspired by the clean white/y
 1. Extract the ZIP.
 2. Open the `OSniffle-Endfield` folder.
 3. Double-click `index.html` or use VS Code + Live Server.
-4. The page requests public statistics for `OSniffle0` from AniList's GraphQL API.
+4. The page requests public statistics for `0Sniffle0` from AniList's GraphQL API.
 
 No AniList password or access token is used. The page only reads public profile statistics.
 
