@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e9edf0">
+  <title>OSniffle0 // Endfield Operator Record</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="screen">
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="topbar">
+      <div class="system-mark"><span class="mark">A</span><span>OS / FIELD RECORD</span></div>
+      <div class="top-status"><span class="status-dot"></span> CONNECTION ESTABLISHED <span class="top-divider">/</span> TALOS-II ARCHIVE</div>
+    </header>
+
+    <section class="hero" aria-label="Operator overview">
+      <div class="crosshair crosshair-a">＋ <small>04-17</small></div>
+      <div class="crosshair crosshair-b">＋</div>
+      <div class="crosshair crosshair-c">＋ <small>02-14</small></div>
+      <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      <div class="horizon"></div>
+      <div class="operator-wrap" aria-hidden="true">
+        <svg class="operator" viewBox="0 0 300 650" role="img" aria-label="Abstract operator silhouette">
+          <defs>
+            <linearGradient id="coat" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#6f91b7"/><stop offset="1" stop-color="#263e55"/>
+            </linearGradient>
+          </defs>
+          <g class="operator-bob">
+            <path class="cape" d="M105 205 L44 286 L62 411 L34 531 L104 511 L126 367Z"/>
+            <path class="body" fill="url(#coat)" d="M104 190 L196 190 L225 255 L244 405 L218 476 L208 548 L167 548 L155 413 L139 548 L94 548 L91 438 L63 382 L77 260Z"/>
+            <path class="shoulder" d="M91 206 L48 246 L35 285 L65 267 L103 239Z"/>
+            <path class="shoulder" d="M193 204 L249 226 L270 257 L237 262 L199 242Z"/>
+            <path class="head" d="M112 74 Q147 40 183 76 L190 139 Q174 177 147 178 Q116 171 103 137Z"/>
+            <path class="hood" d="M99 121 Q85 64 126 38 Q174 17 203 77 L192 111 Q178 70 143 69 Q113 75 99 121Z"/>
+            <path class="arm" d="M79 247 L45 356 L59 389 L91 286Z"/>
+            <path class="arm" d="M218 247 L250 352 L234 386 L205 286Z"/>
+            <path class="leg leg-left" d="M99 520 L143 520 L139 614 L116 637 L87 627 L94 578Z"/>
+            <path class="leg leg-right" d="M165 520 L207 520 L215 601 L238 626 L213 644 L180 624 L169 576Z"/>
+            <path class="boot" d="M88 613 L119 618 L118 640 L72 640 Q67 630 88 613Z"/>
+            <path class="boot" d="M207 613 L235 619 L254 641 L210 644 L190 630Z"/>
+            <path class="strap" d="M116 197 L166 198 L208 340 L184 349Z"/>
+          </g>
+        </svg>
+      </div>
+      <div class="hero-label">
+        <span class="eyebrow">OPERATOR DATABASE // PERSONAL ARCHIVE</span>
+        <h1>OSNIFFLE<span>0</span></h1>
+        <p>READING RECORDS <i>•</i> REGIONAL DEVELOPMENT <i>•</i> FIELD LOG</p>
+      </div>
+      <div class="side-readout"><span>IDENTIFICATION</span><b>OS-0001</b><span>STATUS</span><b class="online">ACTIVE</b></div>
+    </section>
+
+    <div class="yellow-strip"><span>ARCHIVE ACCESS // USER OVERVIEW</span><b>CLICK / SCROLL TO REVIEW</b><span class="strip-end">◉</span></div>
+
+    <section class="dashboard" id="records">
+      <div class="section-heading"><span>01 / OPERATOR RECORD</span><span class="line"></span><span>DATA SYNC: <b id="sync-state">LOCAL PREVIEW</b></span></div>
+      <div class="stats-grid">
+        <article class="stat-card">
+          <div class="card-top"><span>ANIME DATABASE</span><span>AN / 01</span></div>
+          <div class="big-number" id="anime-count">998</div>
+          <div class="stat-label">TOTAL ANIME ENTRIES</div>
+          <div class="mini-stats"><div><b id="anime-episodes">—</b><span>EPISODES</span></div><div><b id="anime-days">197.2</b><span>DAYS WATCHED*</span></div><div><b id="anime-score">71.4</b><span>MEAN SCORE*</span></div></div>
+        </article>
+        <article class="stat-card">
+          <div class="card-top"><span>MANGA DATABASE</span><span>MG / 02</span></div>
+          <div class="big-number" id="manga-count">1,644</div>
+          <div class="stat-label">TOTAL MANGA ENTRIES</div>
+          <div class="mini-stats"><div><b id="manga-chapters">139,433</b><span>CHAPTERS*</span></div><div><b id="manga-volumes">—</b><span>VOLUMES</span></div><div><b id="manga-score">73.5</b><span>MEAN SCORE*</span></div></div>
+        </article>
+      </div>
+
+      <div class="section-heading section-gap"><span>02 / REGIONAL DEVELOPMENT RECORD</span><span class="line"></span><span>YEARLY PROGRESS</span></div>
+      <article class="progress-card">
+        <div class="progress-row"><div class="year">2022</div><div class="bar"><span style="width:40%"></span></div><b>25,339</b><small>CHAPTERS</small></div>
+        <div class="progress-row"><div class="year">2023</div><div class="bar"><span style="width:100%"></span></div><b>62,079</b><small>CHAPTERS</small></div>
+        <div class="progress-row"><div class="year">2024</div><div class="bar"><span style="width:33%"></span></div><b>20,487</b><small>CHAPTERS</small></div>
+        <div class="progress-row"><div class="year">2025</div><div class="bar"><span style="width:33%"></span></div><b>20,595</b><small>CHAPTERS</small></div>
+        <p class="footnote">* Values marked with an asterisk are currently profile reference values. Live AniList fields will replace supported values after API connection. Yearly history is manually maintained.</p>
+      </article>
+
+      <div class="section-heading section-gap"><span>03 / CORE ACHIEVEMENT MILESTONES</span><span class="line"></span><span>ARCHIVE INDEX</span></div>
+      <article class="milestones">
+        <div><span>01</span><b>10,000 CHAPTERS</b><time>05 / 23 / 2022</time></div>
+        <div><span>02</span><b>25,000 CHAPTERS</b><time>02 / 25 / 2023</time></div>
+        <div><span>03</span><b>50,000 CHAPTERS</b><time>05 / 14 / 2023</time></div>
+        <div><span>04</span><b>69,000 CHAPTERS</b><time>07 / 17 / 2023</time></div>
+        <div><span>05</span><b>75,000 CHAPTERS</b><time>08 / 21 / 2023</time></div>
+        <div><span>06</span><b>85,000 CHAPTERS</b><time>12 / 14 / 2023</time></div>
+        <div><span>07</span><b>90,000 CHAPTERS</b><time>02 / 03 / 2024</time></div>
+      </article>
+      <footer><span>OS_WIN_REL // PROFILE OVERVIEW</span><span>UNOFFICIAL FAN-MADE INTERFACE • NOT AFFILIATED WITH HYPERGRYPH</span></footer>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
