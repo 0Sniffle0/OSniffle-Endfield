@@ -8,18 +8,8 @@ query ($name: String) {
     name
     siteUrl
     statistics {
-      anime {
-        count
-        meanScore
-        episodesWatched
-        minutesWatched
-      }
-      manga {
-        count
-        meanScore
-        chaptersRead
-        volumesRead
-      }
+      anime { count meanScore episodesWatched minutesWatched }
+      manga { count meanScore chaptersRead volumesRead }
     }
   }
 }`;
@@ -44,7 +34,6 @@ async function loadAniListStats() {
     if (payload.errors?.length) throw new Error(payload.errors[0].message);
     const user = payload.data?.User;
     if (!user) throw new Error("AniList user not found.");
-
     const anime = user.statistics?.anime;
     const manga = user.statistics?.manga;
     if (anime) {
@@ -65,5 +54,4 @@ async function loadAniListStats() {
     if (state) state.textContent = "OFFLINE // REFERENCE DATA";
   }
 }
-
 loadAniListStats();
